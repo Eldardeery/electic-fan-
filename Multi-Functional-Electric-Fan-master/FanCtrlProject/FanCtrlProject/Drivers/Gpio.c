@@ -1,9 +1,4 @@
-/*
- * Gpio.c
- *
- * Created: 3/20/2020 5:38:06 AM
- *  Author: Mahmo
- */ 
+
 #include "Gpio.h"
 
 //Gpio APIs
