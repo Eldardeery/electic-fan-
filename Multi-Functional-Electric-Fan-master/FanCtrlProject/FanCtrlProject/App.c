@@ -1,9 +1,4 @@
-/*
- * FanCtrlProject.c
- *
- * Created: 3/20/2020 12:53:04 AM
- * Author : Mahmo
- */ 
+
 #include "App.h"
 
 extern _Bool SysAutoOffSt;
