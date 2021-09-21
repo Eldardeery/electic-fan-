@@ -1,9 +1,3 @@
-/*
- * Pwm.h
- *
- * Created: 3/20/2020 5:38:37 AM
- *  Author: Mahmo
- */ 
 
 
 #ifndef PWM_H_
