@@ -1,9 +1,3 @@
-/*
- * TimerButton.h
- *
- * Created: 4/13/2020 6:10:58 PM
- *  Author: Mahmo
- */ 
 
 
 #ifndef TIMERAPP_H_
