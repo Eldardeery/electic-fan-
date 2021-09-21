@@ -1,9 +1,4 @@
-/*
- * LcdApp.c
- *
- * Created: 4/14/2020 9:43:52 PM
- *  Author: Mahmo
- */ 
+
 #include "LcdApp.h"
 
 extern uint8_t MotorSpeed;
