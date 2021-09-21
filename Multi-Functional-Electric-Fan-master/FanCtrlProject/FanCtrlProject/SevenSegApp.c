@@ -1,9 +1,4 @@
-/*
- * SevenSegApp.c
- *
- * Created: 4/15/2020 8:45:00 AM
- *  Author: Mahmo
- */ 
+
 #include "SevenSegApp.h"
 extern uint8_t SysHours;
 extern uint8_t SysMinuts;
