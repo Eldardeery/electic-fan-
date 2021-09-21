@@ -1,9 +1,4 @@
-/*
- * Lcd.c
- *
- * Created: 3/20/2020 5:40:54 AM
- *  Author: Mahmo
- */ 
+
 #include "Lcd.h"
 
 LcdRetT LcdInit(LcdT* Lcd)
