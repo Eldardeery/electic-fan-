@@ -1,9 +1,4 @@
-/*
- * TimerApp.c
- *
- * Created: 4/13/2020 6:10:44 PM
- *  Author: Mahmo
- */ 
+
 #include "TimerApp.h"
 
 extern int8_t BuzzDelay;
