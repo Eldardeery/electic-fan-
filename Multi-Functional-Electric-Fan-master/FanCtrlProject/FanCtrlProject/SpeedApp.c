@@ -1,9 +1,4 @@
-/*
- * SpeedApp.c
- *
- * Created: 4/13/2020 8:42:24 AM
- *  Author: Mahmo
- */ 
+
 #include "SpeedApp.h"
 
 
