@@ -1,9 +1,3 @@
-/*
- * MotorSwingApp.h
- *
- * Created: 4/2/2020 9:53:25 PM
- *  Author: Mahmo
- */ 
 
 
 #ifndef MOTORSWINGAPP_H_
