@@ -1,9 +1,3 @@
-/*
- * Info.h
- *
- * Created: 3/20/2020 1:02:00 AM
- *  Author: Mahmo
- */ 
 
 
 #ifndef INFO_H_
@@ -49,24 +43,24 @@ _Bool SwingProcessSt;
 ? SSD and LCD: Indicate current fan mode 
 "System Description" 
 ====================Fan======================
-“+” PB              |||         Swing Motor
-“-” PB              |||         Buzzer
-“Display” PB        |||         Speed Motor"triac"
-“Timer” PB          |||         SSD
-“Swing” Slider      |||         LCD
+â€œ+â€ PB              |||         Swing Motor
+â€œ-â€ PB              |||         Buzzer
+â€œDisplayâ€ PB        |||         Speed Motor"triac"
+â€œTimerâ€ PB          |||         SSD
+â€œSwingâ€ Slider      |||         LCD
 #Speed Control 
 ? 3 speeds are supported (max, mid and min).
 ? Default is min after power up. 
 ? AC speed motor is connected to the controller via a "triac".//Page 8
-? A triac opens if a pulse is applied on it for 100 µs @ least.
+? A triac opens if a pulse is applied on it for 100 Âµs @ least.
 ? Please select an empty pin to output the triac pulse 
 ? Speed is varied by varying the position of the pulse after the zero crossing 
     of the AC line signal. 
 ? We will use a timer to simulate Zero-Crossing of the mains signal. It should 
     generate an interrupt every 10 ms to simulate a half sinewave. 
 ? Speed can only be changed as follows:
-? “+” PB increases the speed if it is released and the speed is not max.
-? “-” PB decreases the speed if it is released and the speed is not min.
+? â€œ+â€ PB increases the speed if it is released and the speed is not max.
+? â€œ-â€ PB decreases the speed if it is released and the speed is not min.
 "Cautions for AC Motor Control" 
 #Startup Delay
 ? To reduce the startup surge current 
@@ -94,24 +88,24 @@ Swing Angle Swing Motor Value
 #Timer
 ? A Timer can be used to turn off the fan automatically after the selected time.
 ? The supported times are 0, 1, 2 and 4 hours.
-? Whenever the “Timer” PB is pressed for 10 ms @ least, the timer setting 
+? Whenever the â€œTimerâ€ PB is pressed for 10 ms @ least, the timer setting 
     should change and count down restarts. 
 ? Timer setting changes as follows with every valid press 0h ? 1h ? 2h ?
     4h ? 0h and so on.
 #Seven Segment Display 
-? After startup “ HI ” should be displayed for 10 seconds on the SSD. 
+? After startup â€œ HI â€ should be displayed for 10 seconds on the SSD. 
 ? SSD can be updated after the 10 seconds to show the timer settings. 
 ? System should respond to timer settings during the first 10 seconds. 
 ? SSD should display the remaining time to turn off the fan with the 
-    following format “HH.MM”. 
-? If the timer setting is 0h, “00.00” is displayed.
-? If timer setting is changed and not 0h, “HH.MM” should be displayed 
+    following format â€œHH.MMâ€. 
+? If the timer setting is 0h, â€œ00.00â€ is displayed.
+? If timer setting is changed and not 0h, â€œHH.MMâ€ should be displayed 
     showing the current timer setting.
 ? During timer count down, the fields should be updated and the dot blinks 
     every second. 
 #LCD 
 ? Should display the current speed of the motor by default as follows:
-? If the “Display” PB is pressed for 200 ms @ least, the LCD should display 
+? If the â€œDisplayâ€ PB is pressed for 200 ms @ least, the LCD should display 
     the Swing state as follows:
     M o t o r S p e e d
 S p e e d = x x x d e g r e e
@@ -120,7 +114,7 @@ S p e e d = x x x d e g r e e
 45 degrees  S w i n g V a l u e
                     * *
 ? The LCD should display the motor speed again after 20 seconds or after a 
-valid “Display” PB press. 
+valid â€œDisplayâ€ PB press. 
 90 degrees  S w i n g V a l u e
                   * * * *
 
@@ -198,11 +192,11 @@ Buzzer
 SSD
 LCD
 ====================Fan======================
-“+” PB              |||         Swing Motor
-“-” PB              |||         Buzzer
-“Display” PB        |||         Speed Motor"triac"
-“Timer” PB          |||         SSD
-“Swing” Slider      |||         LCD
+â€œ+â€ PB              |||         Swing Motor
+â€œ-â€ PB              |||         Buzzer
+â€œDisplayâ€ PB        |||         Speed Motor"triac"
+â€œTimerâ€ PB          |||         SSD
+â€œSwingâ€ Slider      |||         LCD
 use a timer to simulate Zero-Crossing generate an interrupt every 10 ms
 
 ? Swing angle can only be changed through the slider.
@@ -221,7 +215,7 @@ Swing Angle Swing Motor Value
 //timer
 timer auto sys-off 1,2 or 4 hours
 Default is min after power up
-Whenever the “Timer” PB is pressed for 10 ms @ least, the timer setting	//we can check in the 10ms isr
+Whenever the â€œTimerâ€ PB is pressed for 10 ms @ least, the timer setting	//we can check in the 10ms isr
 should change and count down restarts
 Timer setting changes as follows with every valid press 0h ? 1h ? 2h ?
 4h ? 0h and so on
@@ -229,25 +223,25 @@ Timer setting changes as follows with every valid press 0h ? 1h ? 2h ?
 Indicate PB valid press or a change in the swing value
 (2 seconds buzz)
 //speed motor
-“+” PB increases the speed if it is released and the speed is not max.
-“-” PB decreases the speed if it is released and the speed is not min.
+â€œ+â€ PB increases the speed if it is released and the speed is not max.
+â€œ-â€ PB decreases the speed if it is released and the speed is not min.
 //swing motor
 9 angles possible
 
 //Seven Segment Display
-? After startup “ HI ” should be displayed for 10 seconds on the SSD.
+? After startup â€œ HI â€ should be displayed for 10 seconds on the SSD.
 ? SSD can be updated after the 10 seconds to show the timer settings.
 ? System should respond to timer settings during the first 10 seconds.
 ? SSD should display the remaining time to turn off the fan with the
-following format “HH.MM”.
-? If the timer setting is 0h, “00.00” is displayed.
-? If timer setting is changed and not 0h, “HH.MM” should be displayed
+following format â€œHH.MMâ€.
+? If the timer setting is 0h, â€œ00.00â€ is displayed.
+? If timer setting is changed and not 0h, â€œHH.MMâ€ should be displayed
 showing the current timer setting.
 ? During timer count down, the fields should be updated and the dot blinks
 every second.
 //LCD
 ? Should display the current speed of the motor by default as follows:
-? If the “Display” PB is pressed for 200 ms @ least, the LCD should display
+? If the â€œDisplayâ€ PB is pressed for 200 ms @ least, the LCD should display
 the Swing state as follows:
 M o t o r S p e e d
 S p e e d = x x x d e g r e e
@@ -256,7 +250,7 @@ S w i n g V a l u e
 S w i n g V a l u e
 * *
 The LCD should display the motor speed again after 20 seconds or after a
-valid “Display” PB press.
+valid â€œDisplayâ€ PB press.
 #endif //0
 
 
