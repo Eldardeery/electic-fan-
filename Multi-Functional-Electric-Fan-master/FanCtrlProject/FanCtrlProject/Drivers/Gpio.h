@@ -1,10 +1,3 @@
-/*
- * Gpio.h
- *
- * Created: 3/20/2020 5:38:18 AM
- *  Author: Mahmo
- */ 
-
 
 #ifndef GPIO_H_
 #define GPIO_H_
