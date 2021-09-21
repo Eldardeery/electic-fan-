@@ -1,9 +1,4 @@
-/*
- * Pwm.c
- *
- * Created: 3/20/2020 5:38:54 AM
- *  Author: Mahmo
- */ 
+
 #include "Pwm.h"
 
 void PwmEnableSrc(PwmBaseT Base);
