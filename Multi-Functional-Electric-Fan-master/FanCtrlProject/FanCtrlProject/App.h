@@ -1,10 +1,3 @@
-/*
- * App.h
- *
- * Created: 4/15/2020 7:29:04 AM
- *  Author: Mahmo
- */ 
-
 
 #ifndef APP_H_
 #define APP_H_
