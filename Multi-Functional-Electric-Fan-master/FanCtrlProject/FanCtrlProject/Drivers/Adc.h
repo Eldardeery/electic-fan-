@@ -1,9 +1,3 @@
-/*
- * Adc.h
- *
- * Created: 3/20/2020 5:37:47 AM
- *  Author: Mahmo
- */ 
 
 
 #ifndef ADC_H_
