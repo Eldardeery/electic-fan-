@@ -1,9 +1,3 @@
-/*
- * SevenSegApp.h
- *
- * Created: 4/15/2020 8:45:19 AM
- *  Author: Mahmo
- */ 
 
 
 #ifndef SEVENSEGAPP_H_
