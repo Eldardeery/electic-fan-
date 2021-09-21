@@ -1,9 +1,4 @@
-/*
- * SevenSeg.c
- *
- * Created: 3/20/2020 5:40:14 AM
- *  Author: Mahmo
- */ 
+
 #include "SevenSeg.h"
 
 static uint8_t DispPatterns[MAX_POSSIBLE_VAL] = {0x3F,0x06,0x5B,0x4F,0x66,0x6D,0x7D,0x07,0x7F,0x6F};
