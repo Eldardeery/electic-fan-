@@ -1,9 +1,3 @@
-/*
- * BuzzApp.h
- *
- * Created: 4/16/2020 2:53:23 PM
- *  Author: Mahmo
- */ 
 
 
 #ifndef BUZZAPP_H_
