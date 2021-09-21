@@ -1,9 +1,3 @@
-/*
- * Testing.h
- *
- * Created: 4/15/2020 7:27:23 AM
- *  Author: Mahmo
- */ 
 
 
 #ifndef TESTING_H_
