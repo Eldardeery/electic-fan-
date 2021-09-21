@@ -1,9 +1,4 @@
-/*
- * Timer.c
- *
- * Created: 3/20/2020 5:39:16 AM
- *  Author: Mahmo
- */ 
+
 #include "Timer.h"
 
 static CallBkFuncT T0_OV_CB;
