@@ -1,9 +1,4 @@
-/*
- * Adc.c
- *
- * Created: 3/20/2020 5:37:29 AM
- *  Author: Mahmo
- */ 
+
 #include "Adc.h"
 //extern uint16_t ReadVal2;
 static AdcCallBackFunT AdcCallBack = NULL;
