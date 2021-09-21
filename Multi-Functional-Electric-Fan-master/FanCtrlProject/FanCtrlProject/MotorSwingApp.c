@@ -1,9 +1,4 @@
-/*
- * MotorSwingApp.c
- *
- * Created: 4/2/2020 9:53:02 PM
- *  Author: Mahmo
- */ 
+
 #include "MotorSwingApp.h"
 
 int8_t  SwingVal= 0;
