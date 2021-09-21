@@ -1,9 +1,3 @@
-/*
- * SpeedButtons.h
- *
- * Created: 4/13/2020 8:42:46 AM
- *  Author: Mahmo
- */ 
 
 
 #ifndef SPEEDAPP_H_
